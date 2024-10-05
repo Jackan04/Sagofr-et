@@ -1,0 +1,91 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: 2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3.5rem;
+    padding: 1.5rem 3rem;
+    border: solid;
+    border-radius: 1rem;
+}
+
+#btn-contact{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background-color: #7CA563;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#header-line{
+    border: solid 0.7px black;
+    
+    width: 80%;
+}
+
+
+
+
+/* Main */
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 3rem;
+
+}
+
+#hero-header{
+    font-size: 1.8rem;
+}
+
+#text-container{
+    display: flex;
+    gap: 8rem;
+    justify-content: space-between;
+    padding: 3rem;
+    margin: 5rem;
+}
+
+#home-text{
+    max-width: 30rem;
+}
+
+#logo{
+    max-width: 30rem;
+    max-height: auto;
+    border-radius: 2rem;
+}
