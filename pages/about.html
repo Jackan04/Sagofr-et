@@ -11,7 +11,8 @@
 
 
     <header>
-        <h1>Sagofröet</h1>
+        <a id="logo-link" href="/index.html"><h1><i class="fas fa-seedling"></i> Sagofröet</h1></a>
+
         <nav>
             <a href="/index.html">Hem</a>
             <a href="/pages/about.html">Om oss</a>
@@ -26,72 +27,149 @@
 
     <main id="main-about">
         <div id="about-title">
-            <h1>Läs mer om oss</h1>
+            <h1>Välkommen till Sagofröet UF!</h1>
+
+            <p> Vi är ett engagerat UF-team med en gemensam vision att skapa något unikt. Här kan du lära känna oss bättre och upptäcka vilka styrkor och idéer som driver vårt arbete framåt.</p>
         </div>
-
+        <div id="about-content-container">
+            <!-- <div>
+                <img id="illustration-about" src="/assets/illustration-about.png">
+            </div> -->
         
+            <div id="about-cards">
+      
+    
+                <!-- Ludiv Rosbecker -->
+                <div class="card">
+                        <h2>Ludvig Rosbecker</h2>
+                        <b>VD</b>
+                        <a id="btn-modal-ludvig">Läs mer <i class="fas fa-angle-down"></i></a>
+    
+                </div>
+    
+                <dialog id="modal-ludvig" class="about-modal">
+                    <h2 class="modal-about-heading">Vem är Ludiv Rosbecker?</h2>
+                    <p class="modal-about-text">Ludvig Rosbecker är en engagerad och målmedveten ledare som sätter högt värde på
+                        samarbete och tydlig kommunikation. Hans förmåga att motivera och inspirera sitt team,
+                        kombinerat med hans anpassningsförmåga i föränderliga miljöer, gör att han effektivt kan
+                        leda projekt och team mot framgång. Med ansvar för strategisk planering, beslutsfattande och
+                        att främja teamwork, säkerställer Ludvig att alla medlemmar är delaktiga i arbetsprocessen.
+                        Han skriver affärsplaner, upprätthåller viktiga kontakter med investerare och leverantörer,
+                        och leder organisationen med både professionalism och entusiasm.</p>
+                    <button id="close-ludvig" class="btn-close-modal">Stäng</button>
+                </dialog>
         
-        <div id="about-cards">
-
-            <div class="card">
-                    <h2>Ludvig Rosbecker</h2>
-                    <b>VD</b>
-                    <a id="btn-modal-ludvig">Läs mer <i class="fas fa-angle-down"></i></a>
-
-            </div>
-
-            <dialog id="modal-ludvig">
-                <h2>Test</h2>
-                <p>Hey this is a test</p>
-                <button class="closeModal">Stäng</button>
-            </dialog>
+                <!-- Filip Kjellgren -->
+                <div class="card">
+                        <h2>Filip Kjellgren</h2>
+                        <b>Ekonomi</b>
+                        <a id="btn-modal-filip">Läs mer <i class="fas fa-angle-down"></i></a>
     
-            <div class="card">
-                    <h2>Filip Kjellgren</h2>
-                    <b>Ekonomi</b>
-                    <a>Läs mer <i class="fas fa-angle-down"></i></a>
-
-            </div>
+                </div>
     
-            <div class="card">
-                    <h2>Julia Asker</h2>
-                    <b>Marknadsföring</b>
-                    <a>Läs mer <i class="fas fa-angle-down"></i></a>
+                <dialog id="modal-filip" class="about-modal">
+                    <h2 class="modal-about-heading">Vem är Filip Kjellgren?</h2>
+                    <p class="modal-about-text">Filip Kjellgren är en noggrann och strukturerad ekonom som alltid haft ett starkt intresse för
+                        siffror och detaljer. Han har ett stort fokus på att skapa en stabil finansiell grund för företaget
+                        genom att hantera ekonomi med precision och skicklighet. På Sago Fröet ansvarar han för
+                        bokföring, kontroll av utgifter och intäkter samt uppföljning av företagets budget. Genom sitt
+                        metodiska arbetssätt säkerställer Filip att företagets ekonomi är i ordning, vilket skapar goda
+                        förutsättningar för att fatta välgrundade beslut och hålla företaget på rätt kurs.</p>
+                    <button id="close-filip" class="btn-close-modal">Stäng</button>
+                </dialog>
+        
+                
+                <!-- Julia Asker -->
+                <div class="card">
+                        <h2>Julia Asker</h2>
+                        <b>Marknadsföring</b>
+                        <a id="btn-modal-julia">Läs mer <i class="fas fa-angle-down"></i></a>
+               
+                </div>
+    
+                <dialog id="modal-julia" class="about-modal">
+                    <h2 class="modal-about-heading">Vem är Julia Asker?</h2>
+                    <p class="modal-about-text">Julia Asker är en passionerad och kreativ marknadsföringsansvarig med en stark förmåga att
+                        kommunicera företagets kärnvärden kring hållbarhet och barns lärande. Hennes utåtriktade
+                        och sociala personlighet bidrar till att hon snabbt kan bygga relationer och identifiera kunders
+                        behov. Med en kreativ inställning utvecklar Julia engagerande kampanjer som fångar både
+                        barn och föräldrar. Hon hanterar företagets sociala mediekanaler, skapar troligen samarbeten
+                        med influensers och partners och sprider Sago Fröets budskap om hållbar odling och barnens
+                        lärande, vilket i sin tur bidrar till både tillväxt och samhällspåverkan.</p>
+                    <button id="close-julia" class="btn-close-modal">Stäng</button>
+                </dialog>
+        
+               
+                <div class="card">
+                        <h2>Alice Tartu</h2>
+                        <b>Produktansvarig</b>
+                        <a id="btn-modal-alice">Läs mer <i class="fas fa-angle-down"></i></a>
+                       
+                </div>
+    
+                <dialog id="modal-alice" class="about-modal">
+                    <h2 class="modal-about-heading">Vem är Alice Tartu?</h2>
+                    <p class="modal-about-text">Alice Tartu är en målmedveten och social produktionsansvarig som ständigt söker de bästa
+                        leverantörerna och identifierar nya affärsmöjligheter för att driva företagets expansion.
+                        Hennes noggranna utvärdering av olika alternativ säkerställer att produktionsprocessen är
+                        effektiv och hållbar. Alice värdesätter starka relationer, både inom teamet och med externa
+                        partners, och är djupt engagerad i att skapa en positiv och inspirerande arbetsmiljö där alla
+                        arbetar mot gemensamma mål. Genom sitt fokus på högkvalitativ produktion och innovativ
+                        försäljning bidrar hon till företagets långsiktiga tillväxt.</p>
+                    <button id="close-alice" class="btn-close-modal">Stäng</button>
+                </dialog>
+    
+                
+                <div class="card">
+                        <h2>Måns Lundin</h2>
+                        <b>Försäljning</b>
+                        <a id="btn-modal-mans">Läs mer <i class="fas fa-angle-down"></i></a>
+    
+                </div>
+    
+                <dialog id="modal-mans" class="about-modal">
+                    <h2 class="modal-about-heading">Vem är Måns Lundin?</h2>
+                    <p class="modal-about-text">Måns Lundin är en entusiastisk och energisk säljare som drivs av att hitta rätt lösningar för
+                        varje kund. Med sitt starka engagemang och sin humor skapar han en god stämning och
+                        bygger snabbt förtroendefulla relationer. Måns är särskilt inriktad på att lyfta fram hur Sago
+                        Fröets odlingskit, i kombination med sagorna, kan ge barn en unik och lärorik upplevelse.
+                        Hans övertygelse om att produkten gör en positiv skillnad hjälper honom att nå ut till fler
+                        familjer och stärka företagets position på marknaden.</p>
+                    <button id="close-mans" class="btn-close-modal">Stäng</button>
+                </dialog>
+        
            
-            </div>
     
-            <div class="card">
-                    <h2>Alice Tartu</h2>
-                    <b>Produktansvarig</b>
-                    <a>Läs mer <i class="fas fa-angle-down"></i></a>
-                   
             </div>
-
-            <div class="card">
-                    <h2>Måns Lundin</h2>
-                    <b>Försäljning</b>
-                    <a>Läs mer <i class="fas fa-angle-down"></i></a>
-
-            </div>
-    
-       
-
         </div>
+       
+        <div class="container" id="group-image-container">
+            <h1>Gruppbild: Sagofröet</h1>
+            <p>I vår gruppbild ser vi teamet bakom Sago Fröet, engagerade i att skapa ett inspirerande och lärorikt odlingskit för barn. Från vänster till höger står vi:</p>
+            <ul>
+                <li><strong>Måns Lundin</strong> – Säljansvarig, som arbetar för att sprida vårt budskap och våra produkter till fler familjer.</li>
+                <li><strong>Alice Taru</strong> – Produkt- och inköpsansvarig, som säkerställer att vi har de bästa materialen för att skapa en pedagogisk och hållbar odlingsupplevelse.</li>
+                <li><strong>Julia Asker</strong> – Marknadsföringsansvarig, som ansvarar för vår synlighet och kommunikation, så att vi når ut till dem som vill engagera sig i odlingens under.</li>
+                <li><strong>Filip Kjellgren</strong> – Ekonomiansvarig, som ser till att våra resurser används effektivt och att vi hålls på rätt spår ekonomiskt.</li>
+                <li><strong>Ludvig Rosbecker</strong> – VD, som leder teamet och sätter den övergripande visionen för Sago Fröet, och säkerställer att vi når våra mål.</li>
+            </ul>
 
-        <img id="groupImage" src="/assets/groupImage.jpeg">
+            <img id="groupImage" src="/assets/groupImage.jpeg">
+        </div>
+     
       
 
 
     </main>
     <hr class="header-line">
-    <footer>
-
-        <h2>Sagofröet</h2>
+    <footer>    
+        <img id="footer-logo" src="/assets/Logo.PNG">
 
         <ul id="social-links">
-            <li><a class="social-icon" href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a class="social-icon" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="social-icon" href="https://www.instagram.com/sagofroetuf/profilecard/?igsh=MTF2Y2s4dDMxYjV2YQ== "><i class="fab fa-instagram"></i></a></li>
+            <li><a class="social-icon" href="https://www.tiktok.com/@sagofroet.uf?_t=8r3Yq5vLFq4&_r=1"><i class="fab fa-tiktok"></i></a></li>
         </ul>
+
     </footer>
 
     <script src="/script.js"></script>

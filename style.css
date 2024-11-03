@@ -10,6 +10,10 @@ body{
     
 }
 
+p, h1, h2, h3, a{
+    color: #333;
+}
+
 a:hover{
     cursor: pointer;
 }
@@ -37,6 +41,8 @@ header{
     display: flex;
     justify-content: space-around;
     margin: 2rem;
+    flex-wrap: wrap;
+    gap: 1.2rem;
 }
 
 nav{
@@ -50,6 +56,7 @@ nav{
     border: solid;
     border-radius: 1rem;
     transition: box-shadow 0.3s ease;
+    flex-wrap: wrap;
     
 }
 
@@ -57,6 +64,13 @@ nav:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
     0 4px 8px rgba(0, 0, 0, 0.15);
 
+}
+#logo-link{
+    text-decoration: none;
+}
+
+#logo-link:hover{
+    opacity: 0.6;
 }
 
 #btn-contact{
@@ -87,28 +101,60 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin: 3rem;
+margin: 2rem;
+/* flex-wrap: wrap; */
 
 }
 
+#italics-greener{
+    border-bottom: solid #7CA563 0.5rem;
+}
+
 #hero-header{
+    flex-wrap: wrap;
     font-size: 1.8rem;
 }
 
 #text-container{
     display: flex;
-    gap: 8rem;
+    gap: 3rem;
     justify-content: space-between;
     padding: 3rem;
-    margin: 5rem;
+    flex-wrap: wrap;
+    margin: 2rem;
 }
 
 #home-text{
-    max-width: 30rem;
+    max-width: 28rem;
+    font-size: 1.1em; 
+  line-height: 1.6; 
+  color: #333;
+  margin: 1em auto; 
+  padding: 0 10px;
+
 }
 
-#logo{
-    max-width: 30rem;
+#more-home-text{
+    
+    border-bottom: #7CA563 solid 0.25rem;
+    padding: 0.4rem;
+    
+}
+
+.inline-link{
+    text-decoration: none;
+}
+
+#icon-container-order{
+    font-size: 1.5rem;
+}
+
+#more-home-text:hover{
+    opacity: 0.6;
+}
+
+#illustration-home{
+    max-width: 40rem;
     max-height: auto;
     border-radius: 2rem;
 }
@@ -126,6 +172,11 @@ footer{
 li i{
     font-size: 2rem;
    
+}
+
+#footer-logo{
+    width: 5rem;
+    border-radius: 3rem;
 }
 
 #social-links{
@@ -146,14 +197,45 @@ li i{
 #about-cards{
     display: flex;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
+    max-width: 50rem;
 
 }
 
+#main-about{
+    gap: 1rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+#about-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30rem;
+    text-align: center;
+
+    font-size: 1.1em; /* Slightly larger than default for better readability */
+  line-height: 1.6; /* Increase line height for easier line scanning */
+  color: #333; /* Dark gray for softer contrast */
+  
+}
+
+#about-content-container{
+    display: flex;
+    margin: 3rem;
+    gap: 4rem;
+}
+
+#illustration-about{
+    max-width: 35rem;
+}
 .card{
-    background-color: rgba(124, 165, 99, 0.5);
-    padding: 1.8rem;
+    padding: 2rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -161,7 +243,8 @@ li i{
     width: 15rem;
     height: 11rem;
     box-sizing: border-box;
-    flex: 1 1 auto; /* Allows cards to shrink or grow if needed */
+    box-shadow: 0 5px 10px #333;
+    flex: 1 1 auto; 
 }
 
 .card h2{
@@ -170,7 +253,7 @@ li i{
 }
 
 .card a{
-    background-color: white;
+    font-size: 18px;
     opacity: 0.8;
     max-width: fit-content;
     padding: 0.35rem;
@@ -182,14 +265,100 @@ li i{
     transform: scale(1.1);
 }
 
-#main-about{
-    gap: 4rem;
-}
 
 #groupImage{
-    max-width: 600px;
-    margin-top: 3rem;
-    box-shadow: 0 8px 16px black;
+    max-width: 700px;
+    margin: 4rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
+    flex-wrap: wrap;
   
+}
+
+.about-modal{
+    border: none;
+    width: 35rem;
+    padding: 2rem;
+    border-radius: 1rem;
+
+
+}
+
+.btn-close-modal{
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    background-color: #5091E3;
+    color: white;
+
+}
+
+.btn-close-modal:hover{
+    opacity: 0.6;
+}
+
+.modal-about-text{
+font-size: 1.1em; /* Slightly larger than default for better readability */
+  line-height: 1.6; /* Increase line height for easier line scanning */
+  color: #333; /* Dark gray for softer contrast */
+  max-width: 700px; /* Limits line length for readability */
+  margin: 1em auto; /* Adds vertical space and centers the text */
+  padding: 0 10px; /* Adds a bit of horizontal padding for spacing */
+}
+
+.modal-about-heading{
+    color: #333;
+
+}
+
+/* Product Page */
+#product-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-wrap: wrap;
+
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 1rem;
+}
+
+.section p, li{
+    font-size: 1.1em; /* Slightly larger than default for better readability */
+  line-height: 1.6; /* Increase line height for easier line scanning */
+  color: #333; /* Dark gray for softer contrast */
+  max-width: 700px; /* Limits line length for readability */
+  margin: 0.7em auto;
+  padding: 0 10px; /* Adds a bit of horizontal padding for spacing */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section ul{
+    margin: 10px 0;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+#group-image-container{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+
 }
