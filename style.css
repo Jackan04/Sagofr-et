@@ -10,20 +10,32 @@ body{
     
 }
 
-a{
+a:hover{
+    cursor: pointer;
+}
+
+nav a{
     text-decoration: none;
     color: black;
+    transition: transform 0.2s ease-in-out;
+
+    
+}
+
+nav a:hover{
+    transform: scale(1.12);
+
 }
 
 ul{
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 header{
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     margin: 2rem;
 }
 
@@ -32,25 +44,37 @@ nav{
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 3.5rem;
+    gap: 3rem;
+    font-size: 1.3rem;
     padding: 1.5rem 3rem;
     border: solid;
     border-radius: 1rem;
+    transition: box-shadow 0.3s ease;
+    
+}
+
+nav:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
+    0 4px 8px rgba(0, 0, 0, 0.15);
+
 }
 
 #btn-contact{
     border: none;
     border-radius: 2rem;
-    padding: 1rem 2rem;
-    background-color: #7CA563;
-    color: white;
+    padding: 0.7rem 2.2rem;
+    color: black;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 2.2rem;
+    transition: transform 0.2s ease-in-out;
 }
 
-#header-line{
+#btn-contact:hover{
+    transform: scale(1.2);
+}
+
+.header-line{
     border: solid 0.7px black;
-    
     width: 80%;
 }
 
@@ -58,7 +82,6 @@ nav{
 
 
 /* Main */
-
 main{
 display: flex;
 flex-direction: column;
@@ -88,4 +111,85 @@ margin: 3rem;
     max-width: 30rem;
     max-height: auto;
     border-radius: 2rem;
+}
+
+
+/* Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem;
+}
+
+li i{
+    font-size: 2rem;
+   
+}
+
+#social-links{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icon{
+    transition: transform 0.2s ease-in-out;
+    color: black;
+}
+
+.social-icon:hover{
+    transform: scale(1.2)
+}
+
+/* About page */
+#about-cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    background-color: rgba(124, 165, 99, 0.5);
+    padding: 1.8rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 15rem;
+    height: 11rem;
+    box-sizing: border-box;
+    flex: 1 1 auto; /* Allows cards to shrink or grow if needed */
+}
+
+.card h2{
+    margin: 0;
+    padding: 0;
+}
+
+.card a{
+    background-color: white;
+    opacity: 0.8;
+    max-width: fit-content;
+    padding: 0.35rem;
+    border-radius: 0.3rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card a:hover{
+    transform: scale(1.1);
+}
+
+#main-about{
+    gap: 4rem;
+}
+
+#groupImage{
+    max-width: 600px;
+    margin-top: 3rem;
+    box-shadow: 0 8px 16px black;
+    border-radius: 1rem;
+  
 }
