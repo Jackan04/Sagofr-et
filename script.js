@@ -1,4 +1,3 @@
-
 // Modals for the about-cards
 
 // 1. Ludvig Rosbecker
@@ -66,4 +65,11 @@ btnModalMans.addEventListener("click", function(){
 
 closeModalMans.addEventListener("click", function(){
     modalMans.close();
+})
+
+document.querySelector("#scroll-down-button").addEventListener("click", function(){
+    document.querySelector("#about-content-container").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    })
 })
