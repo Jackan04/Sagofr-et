@@ -125,12 +125,21 @@ margin: 2rem;
 }
 
 @media (max-width: 1379px) {
+
+    body{
+        flex-wrap: wrap;
+    }
     #text-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+      
+    }
+
+    #home-text{
+        margin: 4rem;
     }
 
     header{
