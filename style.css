@@ -138,7 +138,7 @@ margin: 2rem;
       align-items: center;
       flex-wrap: wrap;
       
-    }
+    } 
 
     #home-text{
         margin: 4rem;
@@ -157,6 +157,44 @@ margin: 2rem;
         overflow: hidden;
     }
     
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    #text-container {
+        padding: 1rem;
+    }
+
+    #home-text {
+        margin: 1rem 0.5rem;
+    }
+
+    header {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #text-container {
+        padding: 0.5rem;
+    }
+
+    #home-text {
+        margin: 0.8rem 0.5rem;
+        font-size: 1em;
+    }
+
+    button, a {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
 }
 
 #home-text{
