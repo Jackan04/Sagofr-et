@@ -1,3 +1,19 @@
+// Sponsor Dialog
+document.addEventListener("DOMContentLoaded", function () {
+    const modalSponsors = document.querySelector("#modal-sponsors");
+    const btnSponsorsModal = document.querySelector("#btn-sponsors");
+    const closeSponsorModal = document.querySelector("#close-sponsors-modal");
+
+    btnSponsorsModal.addEventListener("click", function () {
+        modalSponsors.showModal();
+    });
+
+    closeSponsorModal.addEventListener("click", function(){
+        modalSponsors.close();
+    })
+});
+
+
 // Modals for the about-cards
 
 // 1. Ludvig Rosbecker
@@ -67,9 +83,12 @@ closeModalMans.addEventListener("click", function(){
     modalMans.close();
 })
 
+// Btn scroll down - about page
 document.querySelector("#scroll-down-button").addEventListener("click", function(){
     document.querySelector("#about-content-container").scrollIntoView({
         behavior: "smooth",
         block: "start"
     })
 })
+
+
